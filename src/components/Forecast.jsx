@@ -24,24 +24,26 @@ const Forecast = ({ data }) => {
 
   return (
     <>
+      <h1 className='text-center text-xl md:text-3xl underline underline-offset-8 pb-10'>FutureCast</h1>
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
-            <AccordionItemHeading>
+            <AccordionItemHeading className='pb-4'>
               <AccordionItemButton>
-                <div>
+                <div className='flex justify-between align-center m-auto md:max-w-[800px] bg-white rounded'>
+                  <label>{forecastDays[idx]} </label>
                   <img
                     src={`icons/${item.weather[0].icon}.png`}
                     alt="weather"
+                    className='h-10'
                   />
-                  <label>{forecastDays[idx]}</label>
-                  <label>{item.weather[0].description}</label>
-                  <label>{Math.round(item.main.temp)}°F</label>
+                  <label>{item.weather[0].description} </label>
+                  <label>{Math.round(item.main.temp)}°F </label>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <div>
+              <div className='text-center'>
                 <div>
                   <label>Humidity: </label>
                   <label>{item.main.humidity}%</label>
@@ -50,7 +52,7 @@ const Forecast = ({ data }) => {
                   <label>Cloud Cover:</label>
                   <label>{item.clouds.all}%</label>
                 </div>
-                <div>
+                <div className='pb-10'>
                   <label>Wind Speed: </label>
                   <label>{Math.round(item.wind.speed)} mph</label>
                 </div>

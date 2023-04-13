@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/hows-the-weather/static/css/main.e72d264d.css",
+    "main.js": "/hows-the-weather/static/js/main.cee0b505.js",
+    "static/media/bg.jpg": "/hows-the-weather/static/media/bg.abedf8f838c670a486c0.jpg",
+    "index.html": "/hows-the-weather/index.html",
+    "main.e72d264d.css.map": "/hows-the-weather/static/css/main.e72d264d.css.map",
+    "main.cee0b505.js.map": "/hows-the-weather/static/js/main.cee0b505.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e72d264d.css",
+    "static/js/main.cee0b505.js"
+  ]
+}

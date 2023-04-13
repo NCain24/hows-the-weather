@@ -34,11 +34,13 @@ function App() {
   console.log(forecast);
 
   return (
-    <div className="container">
+    <>
+    <h1 className='text-center text-3xl'>How's the weather?</h1>
+    <div>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
-    </div>
+    </div></>
   );
 }
 

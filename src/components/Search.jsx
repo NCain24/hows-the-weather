@@ -31,12 +31,13 @@ const Search = ({ onSearchChange }) => {
   };
 
   return (
-    <div className="w-[50%] m-auto">
-      <div className="m-10">
+    <div className="md:w-[50%] m-auto">
+      <div className="pt-3 pb-10">
         <AsyncPaginate
-          className="text-xl "
+          className="text-sm lg:text-2xl"
           placeholder="Enter a City to begin your search..."
-          value={search}
+          value={ search }
+          debounceTimeout={600}
           onChange={handleOnChange}
           loadOptions={loadOptions}
         />

@@ -1,10 +1,10 @@
-import './current-weather.css';
 
 const CurrentWeather = ({data}) => {
   return (
     <div className="weather">
       <div className="top">
         <div>
+          <p className=''>Current Weather For:</p>
           <p className="city">{data.city}</p>
           <p className="weather-description">{data.weather[0].description}</p>
         </div>
